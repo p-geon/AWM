@@ -11,7 +11,7 @@ RUN apt-get install -y --quiet --no-install-recommends \
 
 RUN apt-get install -y python3-pip
 RUN pip3 --version
-RUN pip3 install awscli 
+RUN pip3 install awscli
 
 WORKDIR /work
 ENTRYPOINT ["/bin/bash"]
