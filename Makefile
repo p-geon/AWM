@@ -4,8 +4,6 @@ run:
 		-v `pwd`:/work \
 		aws_manager
 
-init:
-	aws configure list
-
-sync:
+sync: # set AWS -> sync data
+	aws configure
 	aws s3 sync ./sync_data/ s3://datasets.research/
